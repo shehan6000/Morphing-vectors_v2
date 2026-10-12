@@ -206,6 +206,4 @@ Builds on product quantization (Jégou et al., 2011) and HNSW (Malkov & Yashunin
 
 **Shehan Liyanaarachchi**, Independent Researcher
 
-## License
 
-Add your license here (e.g., MIT or Apache-2.0) and include a `LICENSE` file in the repo root.
