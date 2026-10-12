@@ -121,20 +121,6 @@ These are documented in the paper as part of the contribution, not hidden.
 | **Proposition 1 (Recall ordering):** quantization-induced recall-miss probability is non-decreasing in tier coarseness | One-sided case only (exact query, quantized database); quantization term only, excluding graph-search error | `core/theory.py` |
 | **Proposition 2 (Amortized cost):** per-operation migration cost is O(B log N), independent of how many vectors are eligible | Proof sketch plus empirical scaling check | `eval/scaling_test.py` |
 
----
-
-## Installation
-
-```bash
-git clone https://github.com/<your-username>/morphing-vectors.git
-cd morphing-vectors
-pip install numpy
-# Optional, only for the FAISS comparison in the benchmark:
-pip install faiss-cpu
-```
-
-Requires Python 3.9+ and NumPy. FAISS is used **only** as an external comparison target and is never imported by the system under test.
-
 ## Quick Start
 
 ```python
