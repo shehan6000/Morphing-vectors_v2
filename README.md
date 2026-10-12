@@ -106,7 +106,7 @@ The results separate two distinct gaps:
 
 ## Design Pitfalls Found (Generalizable Findings)
 
-These are documented in the paper as part of the contribution, not hidden.
+These are documented in the paper as part of the contribution.
 
 1. **Routing-node staleness under tiering.** This occurred twice. First, the early entry points of the original flat graph were the oldest nodes and the first to be coarsened. Later, the hierarchical graph's upper-layer routing nodes were coarsened by the same age-based policy as leaf vectors, which initially dropped tiered recall to 0.015 at N = 20,000. *Fix:* pin every node in layer ≥ 1 at the finest tier. *Principle:* any tiered index needs tier-aware routing infrastructure, since distortion in routing nodes corrupts queries globally rather than locally.
 2. **Synthetic benchmark validity.** An i.i.d. Gaussian dataset has no correlation between insertion time and position, which makes recency tiering look like it fails when the premise is simply untestable. Temporally correlated data is a *requirement* for evaluating this class of system.
