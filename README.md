@@ -171,8 +171,8 @@ morphing_vectors/
 │   ├── benchmark.py     # recall/storage benchmark + temporally correlated workload generator
 │   └── scaling_test.py  # amortized migration cost scaling check
 ├── tests/
-│   └── test_basic.py    # correctness tests
-└── README.md
+    └── test_basic.py    # correctness tests
+
 ```
 
 ---
